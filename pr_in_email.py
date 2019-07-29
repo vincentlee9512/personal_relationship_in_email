@@ -94,6 +94,7 @@ def show_graph(graph, layout='spring_layout'):
     nx.draw_networkx(graph, nx_layout, font_size=10)
 
     # 输出
+    plt.savefig('./email_interpersonal_relationship.png')
     plt.show()
 
 
@@ -158,6 +159,7 @@ def main():
 
     # 这里用 circular_layout 代替默认的 spring_layout；让节点分布成一个圆环，增加阅读性
     show_graph(small_graph, 'circular_layout')
+
     pass
 
 
